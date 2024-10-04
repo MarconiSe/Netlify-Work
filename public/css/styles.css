@@ -10,11 +10,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-.card {
-  border: 1px solid red;
-  background-color: yellow;
-}
-
 .testimonial-heading {
   font-weight: 200;
   font-family: "Plus Jakarta Sans", sans-serif;
