@@ -1,1 +1,205 @@
-<h1>This site is under construction</h1>
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Van West Media | NYC Digital Marketing Agency</title>
+  <link href="css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    function includeHTML() {
+      const elements = document.querySelectorAll('[data-include]');
+      elements.forEach(el => {
+        fetch(el.getAttribute('data-include'))
+          .then(response => response.text())
+          .then(data => {
+            el.innerHTML = data;
+          });
+      });
+    }
+    document.addEventListener("DOMContentLoaded", includeHTML);
+  </script>
+</head>
+<body class="bg-gray-100">
+  <header class="">
+      <div data-include="components/navbar.html" class=""></div>
+      <div class="lg:px-24 lg:py-6 px-8 py-8 flex sm:flex-row flex-col items-start sm:items-end">
+        <div class="w-full md:w-[60%] flex flex-col">
+          <h1 class="font-sans font-extralight lg:text-h2 text-h3 text-smalt-blue-900 whitespace-nowrap text-center sm:text-left">Digital Marketing.</h1>
+          <h2 class="font-serif italic lg:text-h2 text-h3 text-vermillion-500 whitespace-nowrap text-center sm:text-left">Driven By Intelligence.</h2>
+        </div>
+        <div class="w-full md:w-[40%] relative flex items-center mt-4 md:mt-0 md:pb-3">
+          <div class="flex-grow border-t border-woodsmoke"></div>
+          <button class="btn-ghost-VWM mx-2">Get in touch</button>
+          <div class="flex-grow border-t border-woodsmoke"></div>
+        </div>
+      </div>
+      
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- video -->
+      <div class="w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[600px] xl:h-[800px] overflow-hidden">
+        <video Autoplay loop muted playsinline class="object-cover w-full h-full"> <!-- add: Autoplay loop -->
+          <source src="src/video/AIpowered-vwm.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </header>
+  <main class="">
+    <!-- expertise section -->
+    <div class="px-8 py-8 lg:px-24 lg:py-16 gap-8">
+      <div class="mb-8">
+        <h3 class="text-h3 text-woodsmoke font-serif font-normal text-center sm:text-left">Van West Expertise</h3>
+        <p class="text-[1.5rem] font-sans font-extralight text-center sm:text-left text-smalt-blue-900">We integrate strategy, design, and technology to optimize every user journey and deliver results.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4">
+        <div class="expertise-container">
+          <h4 class="expertise">User Experience</h4>
+          <ul>
+            <li class="expertise-detail">User-Centric Website Design</li>
+            <li class="expertise-detail">UI/UX Audits & Enhancements</li>
+            <li class="expertise-detail">Prototyping & Wireframing</li>
+            <li class="expertise-detail">Usability Testing & Analysis</li>
+            <li class="expertise-detail">Accessibility Optimization</li>
+          </ul>
+        </div>
+        <div class="">
+          <h4 class="expertise">Development</h4>
+          <ul>
+            <li class="expertise-detail">E-commerce Optimization</li>
+            <li class="expertise-detail">API Development & Integration</li>
+            <li class="expertise-detail">CMS Development</li>
+            <li class="expertise-detail">SEO & Analytics Implementation</li>
+            <li class="expertise-detail">Hosting and Support</li>
+          </ul>
+        </div>
+        <div class="">
+          <h4 class="expertise">Digital marketing</h4>
+          <ul>
+            <li class="expertise-detail">Social Media Strategy</li>
+            <li class="expertise-detail">Campaign Development</li>
+            <li class="expertise-detail">Inbound Marketing</li>
+            <li class="expertise-detail">Video Production</li>
+            <li class="expertise-detail">Branding & Visual Identity</li>
+          </ul>
+        </div>
+        <div class="">
+          <h4 class="expertise">Strategy</h4>
+          <ul>
+            <li class="expertise-detail">Data Analytics</li>
+            <li class="expertise-detail">Digital Strategy & Consulting</li>
+            <li class="expertise-detail">Market Research & Insights</li>
+            <li class="expertise-detail">Conversion Optimization</li>
+            <li class="expertise-detail">Customer Journey Mapping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- clients section -->
+    <div class="px-8 py-8 lg:px-24 lg:py-16 gap-8">
+      <div class="mb-8">
+        <h3 class="text-h3 font-serif font-normal text-center sm:text-left">World Class Clients</h3>
+      </div>
+      <div class="expertise-grid grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4">
+        <img src="src\img\SONY.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\AEROFARMS.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\FLOS.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\RITZ.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\ETIENNE.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\SSRGA.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\67WINE.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\GOLDENDOOR.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\DELOITTE.png" alt="" class="border-2 border-Smalt Blue/200">
+        <img src="src\img\QB.png" alt="" class="border-2 border-Smalt Blue/200">
+      </div>
+    </div>
+
+    <!-- latests work section -->
+    <div class="px-8 py-8 lg:px-24 lg:py-16">
+      <div class="items-center mb-8">
+        <div class="">
+          <h3 class="text-woodsmoke text-h3 font-serif font-normal text-center sm:text-left">Latest Work</h3>
+        </div>
+        <div class="flex-col justify-center">
+          <p class="text-[1.5rem] text-smalt-blue-900 font-sans font-extralight text-center sm:text-left">Innovative designs with high-tech expertise drive outstanding results.</p>
+          <div class="flex justify-center sm:justify-start w-full sm:w-auto">
+            <button id="dropdownButton" class="inline-flex my-3 justify-center w-fit border border-gray-300 shadow-sm px-4 py-2 bg-transparent text-sm font-medium text-gray-700 hover:bg-slate-200 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+              Options
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="dropdownMenu" class="hidden origin-top-right absolute right-0 mt-2 w-56 shadow-lg bg-slate-100 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+              <div class="py-1" role="none">
+                <label data-filter="All" class="block px-4 py-2 text-sm text-gray-700 hover:bg-smalt-blue-500 hover:text-gray-900 cursor-pointer accent-slate-500" role="menuitem">
+                  <input type="radio" name="option" class="mr-2" value="All"> All Projects
+                </label>
+                <label data-filter="Web Development" class="block px-4 py-2 text-sm text-gray-700 hover:bg-smalt-blue-500 hover:text-gray-900 cursor-pointer accent-slate-500" role="menuitem">
+                  <input type="radio" name="option" class="mr-2" value="Web Development"> Web Development
+                </label>
+                <label data-filter="Branding" class="block px-4 py-2 text-sm text-gray-700 hover:bg-smalt-blue-500 hover:text-gray-900 cursor-pointer accent-slate-500" role="menuitem">
+                  <input type="radio" name="option" class="mr-2" value="Branding"> Branding
+                </label>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>  
+    <div class="work-section grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+      <template id="work-card-template">
+        <div class="card">
+            <div class="justify-center">
+                <img src="" alt="Work Image" class="work-img">
+            </div>
+            <div>
+                <h4 class="card-title"></h4>
+                <h5 class="card-description"></h5>
+            </div>
+        </div>
+    </template>
+  </div>
+</div>
+
+<!-- Testimonials section -->
+<div class="px-8 py-8 lg:px-24 lg:py-16">
+  <div class="flex-grow border-t border-woodsmoke mb-6"></div>
+  <div class="gap-8 grid grid-cols-1 sm:grid-cols-[1fr_3fr]">
+    <div class="">
+      <img src="/src/img/StevenDSladkus.png" alt="" class="testimonial-photo w-full h-full sm:w-auto sm:h-auto">
+    </div>
+    <div class="">
+      <div class="mb-6">
+        <p class="testimonial-subheading bg-smalt-blue-950">Chosen by distinguished brands</p>
+        <h4 class="testimonial-heading bg-smalt-blue-950">We create impactful connections and meaningful success.</h4>
+      </div>
+      <div>
+      <div class="mb-6">
+        <h4 class="testimonial-name">Steven D. Sladkus</h4>
+        <p class="testimonial-company">Partner, Schwarts Sladkus Reich Greenberg Atlas LLP</p>
+      </div>
+      <div class="mb-6">
+        <p class="testimonial-quote">After interviewing numerous companies, my law firm ultimately retained Van West Media to redesign our website and assist in marketing strategy. We are thrilled with the level of services Van West has provided. They hit a grand slam with our new website and have supplied us with valuable marketing guidance. Van West exceeded our expectations and we proud to be one of their clients.</p>
+      </div>
+    </div>
+    <div class="flex gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4b12" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>            
+    </div>
+    </div>
+  </div>
+  <div class="flex-grow border-t border-woodsmoke mt-6"></div>
+</div>
+
+</main>
+  
+</body>
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
+<script src="main.js">
+  
+</script>
+</html>

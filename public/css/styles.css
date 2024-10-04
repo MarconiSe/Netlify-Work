@@ -1,0 +1,122 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid red;
+  background-color: yellow;
+}
+
+.testimonial-heading {
+  font-weight: 200;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.testimonial-subheading {
+  font-weight: 200;
+  font-family: "cardo", serif;
+  font-size: 0.9375rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-family: "cardo", serif;
+  font-size: 2.4375rem;
+}
+
+.testimonial-company {
+  font-weight: 200;
+  font-family: "cardo", serif;
+  font-size: 0.9375rem;
+}
+
+.testimonial-quote {
+  font-weight: 200;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.9375rem;
+}
+
+.testimonial-photo{
+  object-fit: cover;
+}
+
+@layer utilities {
+  .text-woodsmoke {
+    color: #0D0E12;
+  }
+}
+
+@layer components {
+  .expertise-container{
+    display: block;
+  }
+
+  .testimonial-photo{
+  @apply w-8 h-8 object-cover rounded-full;
+  }
+
+  .btn-ghost-VWM{
+    @apply flex-shrink
+    mx-6 text-smalt-blue-900
+    font-sans font-normal text-sm
+    whitespace-nowrap
+    text-center md:text-left
+    hover:font-semibold
+    hover:text-woodsmoke
+    transition-duration: 1s
+    ease-in-out;
+  }
+
+  .btn-filter-inactive-VWM {
+    @apply text-smalt-blue-600
+    font-extralight
+    text-xs font-sans
+    py-2 px-3
+    rounded-full border-2 border-solid
+    border-smalt-blue-300
+    whitespace-nowrap inline-block
+    hover:border-smalt-blue-200
+    hover:text-smalt-blue-400
+    transition-duration: 0.5s
+    ease-in-out
+    ;
+  }
+
+  .btn-filter-active-VWM {
+    @apply text-woodsmoke font-normal text-xs font-sans py-2 px-3 rounded-full border-2 border-solid border-vermillion-500 whitespace-nowrap inline-block;
+  }
+
+  .btn-primary-VWM {
+    @apply bg-vermillion-800 text-white py-2 px-4 rounded hover:bg-vermillion-300;
+  }
+  
+  .btn-secondary-VWM {
+    @apply text-smalt-blue-950 font-sans text-sm font-normal px-4 border-2 border-solid rounded;
+  }
+
+  .expertise{
+    @apply font-normal font-serif text-[1.5rem] mb-4 text-center sm:text-left text-woodsmoke;
+  }
+  
+  .expertise-detail{
+    @apply font-extralight font-sans text-[0.9375rem] text-center sm:text-left text-woodsmoke;
+  }
+
+  .card-title{
+    @apply text-[0.9375rem] font-sans font-normal text-woodsmoke text-center;
+  }
+
+  .card-description{
+    @apply text-[0.9375rem] font-serif font-normal text-smalt-blue-900 text-center italic;
+  }
+
+}

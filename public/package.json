@@ -1,0 +1,12 @@
+{
+  "name": "vanwestwebsite",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "scripts": {
+  "build:css": "npx tailwindcss -i ./css/styles.css -o ./css/output.css --watch"
+}
+}
