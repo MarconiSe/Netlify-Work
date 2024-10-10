@@ -1,9 +1,102 @@
 <footer class="footer">
-  <div class="container mx-auto flex justify-between">
-    <p>&copy; 2024 Van West Media. All rights reserved.</p>
-    <ul class="flex space-x-4">
-      <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-      <li><a href="#" class="hover:underline">Terms of Service</a></li>
-    </ul>
+  <!-- expertise section -->
+  <div class="px-8 py-4 lg:px-24 lg:py-8">
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <!-- Newsletter Subscription -->
+      <div class="flex flex-col justify-end h-full">
+        <h3 class="mb-6 text-h3 text-woodsmoke font-serif font-normal text-center sm:text-left">Subscribe to Van West Newsletter</h3>
+        <form action="" class="flex flex-col items-center sm:items-start">
+          <!-- Email Address -->
+          <div class="relative mb-6 w-full">
+            <input type="email" id="email" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+            <label for="email" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Email Address</label>
+          </div>
+          
+          <!-- First Name & Last Name -->
+          <div class="grid sm:grid-cols-2 gap-x-8 mb-6 w-full">
+            <div class="relative mb-6">
+              <input type="text" id="first-name" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+              <label for="first-name" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">First Name</label>
+            </div>
+            <div class="relative mb-6">
+              <input type="text" id="last-name" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+              <label for="last-name" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Last Name</label>
+            </div>
+          </div>
+          
+          <!-- Submit Button -->
+          <div class="w-full flex">
+            <button type="submit" class="submit-contact-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="flex flex-col justify-end h-full">
+        <button class="w-full text-right">info@vanwestmedia.com</button>
+        <button class="w-full text-right">1.855.vanwest (826.9378)</button>
+        <button class="w-full text-right">FAQs</button>
+        <button class="w-full text-right">Careers</button>
+        <button class="w-full text-right">Policy</button>
+      </div>
+    </div>
+
+    <!-- Expertise Section -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 mt-8">
+      <!-- Expertise Category 1 -->
+      <div class="expertise-container">
+        <h4 class="expertise">User Experience</h4>
+        <ul>
+          <li class="expertise-detail">User-Centric Website Design</li>
+          <li class="expertise-detail">UI/UX Audits & Enhancements</li>
+          <li class="expertise-detail">Prototyping & Wireframing</li>
+          <li class="expertise-detail">Usability Testing & Analysis</li>
+          <li class="expertise-detail">Accessibility Optimization</li>
+        </ul>
+      </div>
+
+      <!-- Expertise Category 2 -->
+      <div class="">
+        <h4 class="expertise">Development</h4>
+        <ul>
+          <li class="expertise-detail">E-commerce Optimization</li>
+          <li class="expertise-detail">API Development & Integration</li>
+          <li class="expertise-detail">CMS Development</li>
+          <li class="expertise-detail">SEO & Analytics Implementation</li>
+          <li class="expertise-detail">Hosting and Support</li>
+        </ul>
+      </div>
+
+      <!-- Expertise Category 3 -->
+      <div class="">
+        <h4 class="expertise">Digital Marketing</h4>
+        <ul>
+          <li class="expertise-detail">Social Media Strategy</li>
+          <li class="expertise-detail">Campaign Development</li>
+          <li class="expertise-detail">Inbound Marketing</li>
+          <li class="expertise-detail">Video Production</li>
+          <li class="expertise-detail">Branding & Visual Identity</li>
+        </ul>
+      </div>
+
+      <!-- Expertise Category 4 -->
+      <div class="">
+        <h4 class="expertise">Strategy</h4>
+        <ul>
+          <li class="expertise-detail">Data Analytics</li>
+          <li class="expertise-detail">Digital Strategy & Consulting</li>
+          <li class="expertise-detail">Market Research & Insights</li>
+          <li class="expertise-detail">Conversion Optimization</li>
+          <li class="expertise-detail">Customer Journey Mapping</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 text-center sm:text-left">
+      <p>© 2024 Van West Media</p>
+    </div>
   </div>
 </footer>

@@ -61,15 +61,14 @@
   color: #373F42;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   white-space: nowrap;
   text-align: center;
-  transition: font-weight 1s ease-in-out, color 1s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .btn-ghost-VWM:hover {
-  font-weight: 600;
-  color: #0D0E12;
+  color: #ff4b12; 
 }
 
 .btn-filter-inactive-VWM {
@@ -165,4 +164,22 @@
 
   .peer::placeholder {
     color: transparent;
+  }
+
+  .submit-contact-btn{
+    color: #21282b;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 4px 16px;
+  border: 2px solid #FF4B12;
+  display: inline-block;
+  }
+
+  .footer{
+    background-color: #e3eaea;
+  }
+
+  .body{
+    background-color: #f4f7f7;
   }

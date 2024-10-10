@@ -20,7 +20,7 @@
     document.addEventListener("DOMContentLoaded", includeHTML);
   </script>
 </head>
-<body class="bg-gray-100">
+<body class="body">
   <header class="">
       <div data-include="components/navbar.html" class=""></div>
       <div class="lg:px-24 lg:py-6 px-8 py-8 flex sm:flex-row flex-col items-start sm:items-end">
@@ -29,9 +29,9 @@
           <h2 class="font-serif italic lg:text-h2 text-h3 text-vermillion-500 whitespace-nowrap text-center sm:text-left">Driven By Intelligence.</h2>
         </div>
         <div class="w-full md:w-[40%] relative flex items-center mt-4 md:mt-0 md:pb-3">
-          <div class="flex-grow border-t border-woodsmoke"></div>
+          <div class="left-line flex-grow border-t border-woodsmoke"></div>
           <button class="btn-ghost-VWM mx-2">Get in touch</button>
-          <div class="flex-grow border-t border-woodsmoke"></div>
+          <div class="right-line flex-grow border-t border-woodsmoke"></div>
         </div>
       </div>
       
@@ -123,7 +123,7 @@
           <p class="text-[1.5rem] text-smalt-blue-900 font-sans font-extralight text-center sm:text-left">Innovative designs with high-tech expertise drive outstanding results.</p>
           <div class="flex justify-center sm:justify-start w-full sm:w-auto">
             <button id="dropdownButton" class="inline-flex my-3 justify-center w-fit border border-gray-300 shadow-sm px-4 py-2 bg-transparent text-sm font-medium text-gray-700 hover:bg-slate-200 focus:outline-none" aria-expanded="true" aria-haspopup="true">
-              Options
+              Categories
               <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
@@ -162,89 +162,105 @@
 <!-- Testimonials section -->
 <div class="px-8 py-8 lg:px-24 lg:py-16">
   <div class="flex-grow border-t border-woodsmoke mb-6"></div>
-  <div class="gap-8 grid grid-cols-1 sm:grid-cols-[1fr_3fr]">
-    <div class="">
-      <img src="/src/img/StevenDSladkus.png" alt="" class="testimonial-photo w-full h-full sm:w-auto sm:h-auto">
+  
+  <div class="grid grid-cols-1 sm:grid-cols-[1fr_3fr] gap-8 items-center justify-center">
+    <!-- Image container -->
+    <div class="flex justify-center">
+      <img src="/src/img/StevenDSladkus.png" alt="" class="testimonial-photo w-40 h-40 sm:w-auto sm:h-auto">
     </div>
+    
+    <!-- Text container -->
     <div class="">
-      <div class="mb-6">
+      <div class="mb-6 text-center sm:text-left">
         <p class="testimonial-subheading bg-smalt-blue-950">Chosen by distinguished brands</p>
         <h4 class="testimonial-heading bg-smalt-blue-950">We create impactful connections and meaningful success.</h4>
       </div>
       <div>
-      <div class="mb-6">
-        <h4 class="testimonial-name">Steven D. Sladkus</h4>
-        <p class="testimonial-company">Partner, Schwarts Sladkus Reich Greenberg Atlas LLP</p>
+        <div class="mb-6">
+          <h4 class="testimonial-name text-center sm:text-left">Steven D. Sladkus</h4>
+          <p class="testimonial-company text-center sm:text-left">Partner, Schwarts Sladkus Reich Greenberg Atlas LLP</p>
+        </div>
+        <div class="mb-6">
+          <p class="testimonial-quote text-center sm:text-left">After interviewing numerous companies, my law firm ultimately retained Van West Media to redesign our website and assist in marketing strategy. We are thrilled with the level of services Van West has provided. They hit a grand slam with our new website and have supplied us with valuable marketing guidance. Van West exceeded our expectations and we proud to be one of their clients.</p>
+        </div>
       </div>
-      <div class="mb-6">
-        <p class="testimonial-quote">After interviewing numerous companies, my law firm ultimately retained Van West Media to redesign our website and assist in marketing strategy. We are thrilled with the level of services Van West has provided. They hit a grand slam with our new website and have supplied us with valuable marketing guidance. Van West exceeded our expectations and we proud to be one of their clients.</p>
+      <div class="flex gap-2 justify-center sm:justify-start">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4b12" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>            
       </div>
-    </div>
-    <div class="flex gap-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4b12" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-      </svg>            
-    </div>
     </div>
   </div>
+  
   <div class="flex-grow border-t border-woodsmoke mt-6"></div>
 </div>
 
-<!-- contact form section -->
+<!-- Contact Form Section -->
 <div class="px-8 py-8 lg:px-24 lg:py-16 gap-8 grid grid-cols-1 sm:grid-cols-2">
-  <div class="mb-8">
-    <h3 class="text-h3 text-woodsmoke font-serif font-normal text-center sm:text-left">Get in touch</h3>
-    <p class="text-[1.5rem] font-sans font-extralight text-center sm:text-left text-smalt-blue-900">Collaborate with the most prestigious names in ecommerce, architecture, technology, and beyond.</p>
+  <div class="mb-8 text-center sm:text-left">
+    <h3 class="text-h3 text-woodsmoke font-serif font-normal">Get in touch</h3>
+    <p class="text-[1.5rem] font-sans font-extralight text-smalt-blue-900">Collaborate with the most prestigious names in ecommerce, architecture, technology, and beyond.</p>
   </div>
-      <div>
-        <form action="">
-        <!-- Email Address -->
+
+  <div>
+    <form action="" class="flex flex-col items-center sm:items-start">
+      <!-- Email Address -->
+      <div class="relative mb-6 w-full">
+        <input type="email" id="email" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+        <label for="email" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Email Address</label>
+      </div>
+
+      <!-- First Name & Last Name -->
+      <div class="grid sm:grid-cols-2 gap-x-8 mb-6 w-full">
         <div class="relative mb-6">
-          <input type="email" id="email" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
-          <label for="email" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Email Address</label>
+          <input type="text" id="first-name" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+          <label for="first-name" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">First Name</label>
         </div>
+        <div class="relative mb-6">
+          <input type="text" id="last-name" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+          <label for="last-name" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Last Name</label>
+        </div>
+      </div>
 
-        <!-- First Name & Last Name -->
-        <div class="grid sm:grid-cols-2 gap-x-8 mb-6">
-          <div class="relative mb-6">
-            <input type="text" id="first-name" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
-            <label for="first-name" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">First Name</label>
-          </div>
-          <div class="relative mb-6">
-            <input type="text" id="last-name" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
-            <label for="last-name" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Last Name</label>
-          </div>
+      <!-- Phone Number & Company -->
+      <div class="grid sm:grid-cols-2 gap-x-8 mb-6 w-full">
+        <div class="relative mb-6">
+          <input type="text" id="phone-number" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent">
+          <label for="phone-number" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Phone Number (Optional)</label>
         </div>
+        <div class="relative mb-6">
+          <input type="text" id="company" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
+          <label for="company" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Company</label>
+        </div>
+      </div>
 
-        <!-- Phone Number & Company -->
-        <div class="grid sm:grid-cols-2 gap-x-8 mb-6">
-          <div class="relative mb-6">
-            <input type="text" id="phone-number" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent">
-            <label for="phone-number" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Phone Number (Optional)</label>
-          </div>
-          <div class="relative mb-6">
-            <input type="text" id="company" class="block w-full bg-transparent border-b-2 border-gray-400 focus:border-gray-800 outline-none py-2 text-sm text-gray-900 peer placeholder-transparent" required>
-            <label for="company" class="absolute left-0 -top-5 text-sm text-gray-500 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-5 peer-focus:text-sm peer-focus:text-gray-700 transition-all">Company</label>
-          </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="flex justify-start">
-          <button type="submit" class="w-52 h-12 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 rounded-full text-white text-base font-semibold">
-            Send Message
-          </button>
-        </div>
-      </form>
-    </div>
+      <!-- Submit Button -->
+      <div class="w-full flex">
+        <button type="submit" class="submit-contact-btn">
+          Submit
+        </button>
+      </div>
+    </form>
   </div>
+</div>
 
+<!---certifications-->
+<div class="px-8 py-8 lg:px-24 lg:py-16">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 px-8 lg:px-24">
+    <img src="src/img/inboundmarketingcertification@2x.png" alt="" class="-my-3 grayscale hover:grayscale-0 transition duration-500 ease-in-out w-40">
+    <img src="src/img/EO-logo_RGB_primary-e1711041502999.png" alt="" class="-ml-2 grayscale hover:grayscale-0 transition duration-500 ease-in-out w-48">
+    <img src="src/img/bbbaccreditedbusiness@2x.png" alt="" class="grayscale hover:grayscale-0 transition duration-500 ease-in-out w-48">
+    <img src="src/img/nycMBE@2x.png" alt="" class="grayscale hover:grayscale-0 transition duration-500 ease-in-out w-40">
+    <img src="src/img/upcity@2x.png" alt="" class="grayscale hover:grayscale-0 transition duration-500 ease-in-out w-48">
+  </div>
+</div>
 </main>
   
 </body>
-<footer>
+<footer class="footer">
   <div data-include="components/footer.html"></div>
 </footer>
 <script src="main.js">
