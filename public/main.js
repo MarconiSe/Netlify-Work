@@ -61,9 +61,36 @@ document.getElementById('collapseButton').addEventListener('click', function () 
 
 document.getElementById('dropdownButton').addEventListener('click', function () {
   const menu = document.getElementById('dropdownMenu');
-  menu.classList.toggle('hidden'); // Toggle the menu visibility
-  console.log('Dropdown toggled!'); // Debugging
+  menu.classList.toggle('hidden');
 });
+
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.card');
+  
+  cards.forEach(card => {
+    const cardCategories = card.dataset.category.split(',').map(cat => cat.trim()); // Handle array & trim spaces
+    
+    // Log for debugging
+    console.log("Card Categories:", cardCategories, "Selected Category:", category);
+    
+    // Check if category matches or is 'All'
+    if (category === "All" || cardCategories.includes(category)) {
+      card.style.display = "block"; // Show the card
+    } else {
+      card.style.display = "none"; // Hide the card
+    }
+  });
+}
+
+document.querySelectorAll('input[name="option"]').forEach(radio => {
+  radio.addEventListener('change', function () {
+    const selectedCategory = this.value; // Get selected category value
+    filterProjects(selectedCategory);    // Call the filter function
+    document.getElementById('dropdownMenu').classList.add('hidden'); // Close the dropdown
+    console.log('Selected category:', selectedCategory); // Debugging
+  });
+});
+
 
 // Call the function to display initial cards
 workArea();
