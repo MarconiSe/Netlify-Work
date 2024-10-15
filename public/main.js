@@ -59,5 +59,11 @@ document.getElementById('collapseButton').addEventListener('click', function () 
   this.classList.add('hidden'); // Hide the "Collapse" button
 });
 
+document.getElementById('dropdownButton').addEventListener('click', function () {
+  const menu = document.getElementById('dropdownMenu');
+  menu.classList.toggle('hidden'); // Toggle the menu visibility
+  console.log('Dropdown toggled!'); // Debugging
+});
+
 // Call the function to display initial cards
 workArea();

@@ -121,16 +121,17 @@
         </div>
         <div class="flex-col justify-center">
           <p class="text-[1.5rem] text-smalt-blue-900 font-sans font-extralight text-center sm:text-left">Innovative designs with high-tech expertise drive outstanding results.</p>
-          <div class="flex justify-center sm:justify-start w-full sm:w-auto">
-            <button id="dropdownButton" class="inline-flex my-3 justify-center w-fit border border-gray-300 shadow-sm px-4 py-2 bg-transparent text-sm font-medium text-gray-700 hover:bg-slate-200 focus:outline-none" aria-expanded="true" aria-haspopup="true">
-              Categories
-              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <div class="relative inline-block w-full sm:w-auto">
+            <button id="dropdownButton" class="inline-flex justify-center text-center w-full sm:w-auto py-2 text-sm font-medium text-gray-700 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+              Select a category
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
             </button>
-            <div id="dropdownMenu" class="hidden origin-top-right absolute right-0 mt-2 w-56 shadow-lg bg-slate-100 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-              <div class="py-1" role="none">
-                <label data-filter="All" class="block px-4 py-2 text-sm text-gray-700 hover:bg-smalt-blue-500 hover:text-gray-900 cursor-pointer accent-slate-500" role="menuitem">
+          
+            <div id="dropdownMenu" class="hidden z-10 origin-top-right absolute left-0 mt-2 w-72 sm:w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <div class="py-1">
+                <label data-filter="All" class="block px-4 py-2 text-sm text-gray-700 hover:bg-smalt-blue-500 hover:text-gray-900 cursor-pointer accent-slate-500">
                   <input type="radio" name="option" class="mr-2" value="All"> All Projects
                 </label>
                 <label data-filter="Web Development" class="block px-4 py-2 text-sm text-gray-700 hover:bg-smalt-blue-500 hover:text-gray-900 cursor-pointer accent-slate-500" role="menuitem">
@@ -163,7 +164,7 @@
       <template id="work-card-template">
         <div class="card">
             <div class="justify-center">
-                <img src="" alt="Work Image" class="work-img">
+                <img src="" alt="Work Image" class="work-img grayscale hover:grayscale-0 transition duration-500 ease-in-out">
             </div>
             <div>
                 <h4 class="card-title"></h4>
@@ -172,10 +173,27 @@
         </div>
     </template>
   </div>
-  <div class="flex justify-center mt-4">
-    <button id="showMoreButton" class="px-4 py-2 bg-blue-500 text-white rounded">Show More</button>
-    <button id="collapseButton" class="px-4 py-2 bg-gray-500 text-white rounded hidden ml-4">Collapse</button>
+  <div class="flex items-center justify-center mt-4 space-x-4">
+    <!-- Left line -->
+    <div class="flex-grow border-t border-woodsmoke"></div>
+    
+    <!-- Button container -->
+    <div class="flex items-center space-x-4">
+      <button id="showMoreButton" class="px-4 py-2 text-woodsmoke rounded hover:text-vermillion-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+      </svg>
+      </button>
+      <button id="collapseButton" class="px-4 py-2 text-woodsmoke rounded hidden hover:text-vermillion-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+      </svg>
+      </button>
+    </div>
+  
+    <!-- Right line -->
+    <div class="flex-grow border-t border-woodsmoke"></div>
   </div>
+  
 </div>
 
 <!-- Testimonials section -->
